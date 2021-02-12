@@ -47,12 +47,18 @@ export default class Navbar extends Component {
         <Link to="/" className="navbar-brand ml-5">
           <img src={logo} alt="logo goes here" width="40px" />
         </Link>
+
         <button
-          className="navbar-toggler"
+          className="navbar-toggler "
           type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
           onClick={this.myToggler}
         >
-          <span className="text-white"> menu</span>
+          <span class="navbar-toggler-icon text-white">Menu</span>
         </button>
         <div className={this.state.navbarClass}>
           <ul className="navbar-nav ml-auto mr-5">

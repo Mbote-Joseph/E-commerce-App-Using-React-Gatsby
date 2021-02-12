@@ -21,3 +21,10 @@
   align-items: center;
   flex-direction: column;
 }
+.contact-background {
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

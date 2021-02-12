@@ -8,26 +8,28 @@ import HeroSection from "../components/Reuseable/HeroSection";
 import Infoblock from "../components/Reuseable/Infoblock";
 import Dualinfoblock from "../components/Reuseable/Dualinfoblock";
 import Coursecart from "../components/Cart/Coursecart";
-const IndexPage = ({ data }) => (
+import Contact from "../components/Contact/Contact";
+const ContactPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <HeroSection
       img={data.img.childImageSharp.fluid}
-      title="I write code"
-      subtitle="LearnCodeOnline.in"
-      heroclass="hero-background"
+      title="Contact Us"
+      subtitle=""
+      heroclass="contact-background "
     />
-    <Infoblock heading="About Us" />
+    <Infoblock heading="How can we help ?" />
     <Coursecart courses={data.courses} />
     <Dualinfoblock
       heading="Our Team"
       image="https://images.pexels.com/photos/1261427/pexels-photo-1261427.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
     />
+    <Contact />
   </Layout>
 );
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "heromain.png" }) {
+    img: file(relativePath: { eq: "contact.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -55,4 +57,4 @@ export const query = graphql`
   }
 `;
 
-export default IndexPage;
+export default ContactPage;
