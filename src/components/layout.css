@@ -31,3 +31,8 @@
 .course-card {
   flex-direction: column;
 }
+.footer-block {
+  background-color: #ee6e73;
+  min-height: 50px;
+  margin-top: -20px;
+}
