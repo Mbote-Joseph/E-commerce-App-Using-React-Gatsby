@@ -7,7 +7,7 @@ export default function Dualinfoblock({ heading, image }) {
       <div className="container">
         <Heading title={heading} />
         <div className="row">
-          <div className="col-8 mx-auto">
+          <div className="col-lg-8 mx-auto  col-sm-12">
             <p className="lead text-white mb-5">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
@@ -25,7 +25,7 @@ export default function Dualinfoblock({ heading, image }) {
             </p>
           </div>
 
-          <div className="col-4 ">
+          <div className="col-lg-4 col-sm-12 ">
             <div className="card ">
               <img className="card-img-top" src={image} alt="image goes here" />
               <div className="card-body">
