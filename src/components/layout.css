@@ -28,11 +28,21 @@
   align-items: center;
   flex-direction: column;
 }
+.services-background {
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .course-card {
   flex-direction: column;
 }
 .footer-block {
   background-color: #ee6e73;
   min-height: 50px;
-  margin-top: -20px;
+}
+.photo-card {
+  margin: 10px;
+  background-color: #f7f7f7;
 }

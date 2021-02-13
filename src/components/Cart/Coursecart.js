@@ -61,7 +61,7 @@ export default class Coursecart extends Component {
               })}
             </div>
           </div>
-          <div className="row course-card">
+          <div className="row">
             {this.state.myCourses.map(({ node }) => {
               return (
                 <div

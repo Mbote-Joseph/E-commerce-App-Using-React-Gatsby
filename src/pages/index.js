@@ -8,13 +8,14 @@ import HeroSection from "../components/Reuseable/HeroSection";
 import Infoblock from "../components/Reuseable/Infoblock";
 import Dualinfoblock from "../components/Reuseable/Dualinfoblock";
 import Coursecart from "../components/Cart/Coursecart";
+import Contact from "../components/Contact/Contact";
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <HeroSection
       img={data.img.childImageSharp.fluid}
       title="I write code"
-      subtitle="LearnCodeOnline.in"
+      subtitle="Mbote-Joseph"
       heroclass="hero-background"
     />
     <Infoblock heading="About Us" />
@@ -23,6 +24,7 @@ const IndexPage = ({ data }) => (
       heading="Our Team"
       image="https://images.pexels.com/photos/1261427/pexels-photo-1261427.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
     />
+    <Contact />
   </Layout>
 );
 export const query = graphql`

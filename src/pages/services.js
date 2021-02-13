@@ -7,31 +7,30 @@ import SEO from "../components/seo";
 import HeroSection from "../components/Reuseable/HeroSection";
 import Infoblock from "../components/Reuseable/Infoblock";
 import Dualinfoblock from "../components/Reuseable/Dualinfoblock";
-import TeamPhotoSection from "../components/About/TeamPhotoSection";
 import Coursecart from "../components/Cart/Coursecart";
 import Contact from "../components/Contact/Contact";
-const AboutPage = ({ data }) => (
+const ServicePage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <HeroSection
       img={data.img.childImageSharp.fluid}
-      title="About Us"
-      subtitle="https://mbote-joseph@netlify.app"
-      heroclass="about-background"
+      title="Our Services"
+      subtitle="Educating the people"
+      heroclass="services-background"
     />
-    <Infoblock heading="About Us" />
+    <Infoblock heading="Services" />
+    <Coursecart courses={data.courses} />
+
     <Dualinfoblock
       heading="Our Team"
       image="https://images.pexels.com/photos/1261427/pexels-photo-1261427.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
     />
-    <TeamPhotoSection />
-    <Coursecart courses={data.courses} />
     <Contact />
   </Layout>
 );
 export const query = graphql`
   {
-    img: file(relativePath: { eq: "heromain.png" }) {
+    img: file(relativePath: { eq: "heromain.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_tracedSVG
@@ -59,4 +58,4 @@ export const query = graphql`
   }
 `;
 
-export default AboutPage;
+export default ServicePage;

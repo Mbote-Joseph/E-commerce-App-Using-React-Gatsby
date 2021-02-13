@@ -15,7 +15,7 @@ const ContactPage = ({ data }) => (
     <HeroSection
       img={data.img.childImageSharp.fluid}
       title="Contact Us"
-      subtitle=""
+      subtitle="mbotejoseph001@gmail.com"
       heroclass="contact-background "
     />
     <Infoblock heading="How can we help ?" />
