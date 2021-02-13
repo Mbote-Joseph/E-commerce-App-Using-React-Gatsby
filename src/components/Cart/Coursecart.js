@@ -69,8 +69,8 @@ export default class Coursecart extends Component {
                   className="col-11 col-md-6 d-flex my-3 mx-auto"
                 >
                   <Img fixed={node.image.fixed} />
-                  <br />
-                  <div className="flex-grow-1 px-3">
+
+                  <div className="flex-grow-1 px-2">
                     <div className="d-flex ">
                       <h6 className="mb-0">{node.title}</h6>
                       <h6 className="mb-0 text-success ml-3">$ {node.price}</h6>
